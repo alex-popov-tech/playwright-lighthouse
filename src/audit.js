@@ -67,6 +67,7 @@ export const playAudit = async function (auditConfig = {}) {
     reports: reportsConfig,
     cdpPort: auditConfig.port,
   });
+  results.comparison = comparison;
 
   log('\n');
   log(chalk.blue('-------- playwright lighthouse audit reports --------'));
