@@ -86,7 +86,9 @@ export const playAudit = async function (auditConfig = {}) {
         : `playwright lighthouse - Some thresholds are not matching the expectations.${formateErrors}`;
 
     if (auditConfig.ignoreError !== true) {
-      throw new Error(label);
+      const error = new Error(label);
+      error.comparison = comparison;
+      throw error;
     } else {
       results.comparisonError = label;
     }
