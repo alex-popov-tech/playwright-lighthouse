@@ -1,12 +1,19 @@
-import { Page } from 'playwright-core';
+import type { Page } from 'playwright-core';
+import type { Flags, Config, RunnerResult } from 'lighthouse';
 
 export interface playwrightLighthouseConfig {
   page?: Page;
   url?: string;
   port: number;
-  thresholds?: Record<string, number>;
-  opts?: Record<string, any>;
-  config?: Record<string, any>;
+  thresholds?: {
+    performance?: number;
+    accessibility?: number;
+    'best-practices'?: number;
+    seo?: number;
+    pwa?: number;
+  };
+  opts?: Flags;
+  config?: Config;
   reports?: {
     formats?: {
       html?: boolean;
@@ -19,6 +26,10 @@ export interface playwrightLighthouseConfig {
   ignoreError?: boolean;
   disableLogs?: boolean;
   ignoreBrowserName?: boolean;
+}
+
+export interface playwrightLighthouseResult extends RunnerResult {
+  comparison?: string;
 }
 
 /**
@@ -46,4 +57,4 @@ export interface playwrightLighthouseConfig {
  */
 export function playAudit(
   playwrightLHConfiguration: playwrightLighthouseConfig
-): Promise<any>;
+): Promise<playwrightLighthouseResult>;
