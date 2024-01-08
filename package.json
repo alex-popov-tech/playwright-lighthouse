@@ -1,6 +1,6 @@
 {
-  "name": "playwright-lighthouse",
-  "version": "3.2.5",
+  "name": "@alex-popov-tech/playwright-lighthouse",
+  "version": "3.2.6",
   "description": "Playwright Lighthouse Audit",
   "main": "index.js",
   "type": "module",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhinaba-ghosh/playwright-lighthouse"
+    "url": "https://github.com/alex-popov-tech/playwright-lighthouse"
   },
   "engines": {
     "node": ">=16.x"
@@ -22,7 +22,7 @@
     "playwright-lighthouse",
     "playwright-audit"
   ],
-  "author": "Abhinaba Ghosh <askabhinaba@gmail.com>",
+  "author": "Oleksandr Popov <alex-popov-tech@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",

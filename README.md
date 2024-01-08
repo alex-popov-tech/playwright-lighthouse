@@ -333,7 +333,7 @@ lighthouseTest.describe('Authenticated route', () => {
 
 ### Running lighthouse on authenticated routes with globalSetup
 
-In case you have a [`globalSetup`](https://playwright.dev/docs/test-auth) script in your test you might want to reuse saved state instead of running auth before every test.  
+In case you have a [`globalSetup`](https://playwright.dev/docs/test-auth) script in your test you might want to reuse saved state instead of running auth before every test.
 Additionally, you may pass `url` instead of `page` to speedup execution and save resources.
 
 ```ts
@@ -512,10 +512,10 @@ You can view your tests on [LambdaTest Web Automation dashboard](https://automat
 
 ## Tell me your issues
 
-you can raise any issue [here](https://github.com/abhinaba-ghosh/playwright-lighthouse/issues)
+you can raise any issue [here](https://github.com/alex-popov-tech/playwright-lighthouse/issues)
 
 ## Before you go
 
 If it works for you , give a [Star](https://github.com/abhinaba-ghosh/playwright-lighthouse)! :star:
 
-_- Copyright &copy; 2020- [Abhinaba Ghosh](https://www.linkedin.com/in/abhinaba-ghosh-9a2ab8a0/)_
+_- Copyright &copy; 2024- [Oleksandr Popov](https://www.linkedin.com/in/aleksanderpopov/)_
